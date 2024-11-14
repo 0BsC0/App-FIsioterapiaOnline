@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
+    <title>Create Account | Mi Sitio</title>
+</head>
+
+<body>
+    <div class="register-container">
+        <h1>Create Account</h1>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>or use your email for registration</span>
+        <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            {{ form.username }}
+            {{ form.email }}
+            {{ form.password1 }}
+            {{ form.password2 }}
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="login-link">
+            ¿Ya tienes una cuenta?
+            <a href="{% url 'login' %}" class="btn-login">Sign In</a>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.profile-container {
+    background-color: #ffffff;
+    padding: 2em;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Clase base para ambos botones */
+.btn, .btn-back {
+    display: block; /* Asegura que ambos elementos se comporten de la misma manera */
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+    width: 100%; /* Asegura que ambos tengan la misma anchura */
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box; /* Asegura que padding no altere el tamaño */
+}
+
+/* Color específico para el botón de Guardar Cambios */
+.btn {
+    background-color: #4CAF50;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Color específico para el botón Volver al Dashboard */
+.btn-back {
+    background-color: #3498db; /* Azul */
+}
+
+.btn-back:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+}
+
+/* Mensajes de retroalimentación */
+.messages p {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+.messages .success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.messages .error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
